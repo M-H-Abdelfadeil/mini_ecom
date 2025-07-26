@@ -185,4 +185,21 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Pagination Settings
+    |--------------------------------------------------------------------------
+    |
+    | This value controls how many items are shown per page in paginated
+    | views. You can change this value from your .env file using the
+    | key ITEMS_PER_PAGE, and the default is set to 15.
+    |
+    */
+   
+    'pagination' => [
+        'items_per_page' => env("ITEMS_PER_PAGE" , 15),
+    ],
+
 ];

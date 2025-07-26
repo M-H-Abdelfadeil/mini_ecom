@@ -75,7 +75,7 @@ class ResponseService
      */
     public static function send_not_found($message = null)
     {
-        $message = $message ?: __('messages.Not found');
+        $message = $message ?: 'Not found';
 
         return self::send_response_error(null, Response::HTTP_NOT_FOUND, $message);
     }
